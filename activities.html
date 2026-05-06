@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Awards, patents, academic service, teaching experience, and certifications by Yoonseon Choi.">
+    <meta name="author" content="Yoonseon Choi">
+    <meta property="og:title" content="Yoonseon Choi | Activities">
+    <meta property="og:description" content="Awards, patents, academic service, teaching experience, and certifications by Yoonseon Choi.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/profile.png">
+    <title>Yoonseon Choi | Activities</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Yoonseon Choi">
+          <img src="icons/yschoi.PNG" alt="">
+          <span>Yoonseon</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">About Me</a>
+          <a href="publications.html">Publications</a>
+          <a href="activities.html" aria-current="page">Activities</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="publication-head">
+        <h1>Activities</h1>
+        <div class="publication-tabs" aria-label="Activity categories">
+          <a href="#awards-honors" aria-current="page">Awards &amp; Honors</a>
+          <a href="#patent">Patents</a>
+          <a href="#academic-service">Academic Service</a>
+          <a href="#teaching-experience">Teaching Experience</a>
+          <a href="#certification">Certification</a>
+        </div>
+      </section>
+
+      <section class="section" id="awards-honors">
+        <h2>Awards &amp; Honors</h2>
+        <div class="content-stack">
+          <ul class="award-list">
+            <li><span>Grand Paper Award, Korea Data Mining Society</span><span class="date">Fall 2024</span></li>
+            <li><span>Best Paper Award, Korea Data Mining Society</span><span class="date">Fall 2024</span></li>
+            <li><span>Best Presentation Award, Korea Computer Congress</span><span class="date">2024</span></li>
+            <li><span>Summa Cum Laude, Hanyang University</span><span class="date">2024</span></li>
+            <li><span>Academic Excellence Award, Hanyang University</span><span class="date">2023</span></li>
+            <li><span>Academic Excellence Scholarship, Gwangju Citizen Scholarship</span><span class="date">2020 - 2021</span></li>
+            <li><span>Academic Excellence Award, Dongduk Women's University</span><span class="date">2019 - 2020</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="patent">
+        <h2>Patents</h2>
+        <div class="content-stack">
+          <article class="item">
+            <div>
+              <h3>Method and system for predicting changes in logistics demand</h3>
+              <p class="details">Application number: 10-2025-0140350</p>
+            </div>
+            <div class="date">Sep. 2025</div>
+          </article>
+          <article class="item">
+            <div>
+              <h3>An LLM-based AI model that reflects inter-modality relationships in multimodal time-series data for personalized prediction of VR sickness</h3>
+              <p class="details">Application number: 10-2025-0100532</p>
+            </div>
+            <div class="date">Jul. 2025</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="academic-service">
+        <h2>Academic Service</h2>
+        <div class="content-stack">
+          <article class="item">
+            <div>
+              <h3>Conference Reviewer</h3>
+              <p class="details">IEEE International Conference on Data Science and Advanced Analytics (DSAA), Korea Computer Congress (KCC), IMWUT, HCI Korea, and CIKM.</p>
+            </div>
+            <div class="date">2024 - 2025</div>
+          </article>
+          <article class="item">
+            <div>
+              <h3>Journal Reviewer</h3>
+              <p class="details">Scientific Reports.</p>
+            </div>
+            <div class="date">2024</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="teaching-experience">
+        <h2>Teaching Experience</h2>
+        <div class="content-stack">
+          <article class="item">
+            <div>
+              <h3>Lecture Assistant</h3>
+              <div class="meta">Data Analytics Expert Training Program, Hanwha General Insurance</div>
+            </div>
+            <div class="date">Jun. 2025</div>
+          </article>
+          <article class="item">
+            <div>
+              <h3>Teaching Assistant</h3>
+              <div class="meta">Data Science Fundamentals</div>
+            </div>
+            <div class="date">Spring 2024, Spring 2025</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="certification">
+        <h2>Certification</h2>
+        <div class="content-stack">
+          <article class="item">
+            <div>
+              <h3>ADsP, Advanced Data Analytics Semi-Professional</h3>
+              <div class="meta">Korea Data Agency</div>
+            </div>
+            <div class="date">Mar. 2023</div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      document.querySelectorAll(".publication-tabs a").forEach((tab) => {
+        tab.addEventListener("click", () => {
+          document.querySelectorAll(".publication-tabs a").forEach((item) => item.removeAttribute("aria-current"));
+          tab.setAttribute("aria-current", "page");
+        });
+      });
+    </script>
+  </body>
+</html>
