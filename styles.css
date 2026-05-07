@@ -244,6 +244,12 @@ h1 {
   line-height: 1.18;
 }
 
+.section-note {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 400;
+}
+
 .content-stack {
   display: grid;
   gap: 14px;
@@ -406,12 +412,68 @@ h1 {
   color: var(--muted);
 }
 
+.experience-item {
+  color: var(--text);
+}
+
+.experience-item.has-logo {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  column-gap: 10px;
+  align-items: start;
+}
+
+.experience-logo {
+  align-self: center;
+  grid-column: 1;
+  grid-row: 1;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transform: translateY(-3px);
+}
+
+.experience-heading {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.48;
+}
+
+.experience-item.has-logo .experience-heading,
+.experience-item.has-logo .experience-role,
+.experience-item.has-logo .experience-detail {
+  grid-column: 2;
+}
+
+.experience-heading strong {
+  font-weight: 700;
+}
+
+.experience-role {
+  margin: 6px 0 0;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.48;
+}
+
+.experience-role::before {
+  content: "◦";
+  margin-right: 8px;
+}
+
+.experience-detail {
+  margin: 4px 0 0 24px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.48;
+}
+
 .publication {
   column-gap: 8px;
   display: grid;
   grid-template-columns: 34px minmax(0, 1fr);
   position: relative;
-  row-gap: 6px;
+  row-gap: 2px;
 }
 
 .publication::before {
@@ -441,16 +503,25 @@ h1 {
 
 .publication .authors,
 .publication .venue,
+.publication .status,
+.publication .note,
 .publication .links {
   grid-column: 2;
 }
 
 .authors,
 .venue,
+.status,
+.note,
 .links {
-  margin: 6px 0 0;
+  margin: 2px 0 0;
   color: var(--muted);
   font-size: 0.98rem;
+}
+
+.note {
+  color: var(--accent-dark);
+  font-weight: 700;
 }
 
 .me {
@@ -475,6 +546,7 @@ h1 {
   background: url("icons/link.png") center / contain no-repeat;
   content: "";
   opacity: 0.82;
+  transform: translateY(-2px);
 }
 
 .links a {
