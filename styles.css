@@ -412,6 +412,40 @@ h1 {
   color: var(--muted);
 }
 
+.patent-item {
+  color: var(--text);
+}
+
+.patent-item.has-logo {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  column-gap: 10px;
+  align-items: start;
+}
+
+.patent-item.has-logo .patent-heading,
+.patent-item.has-logo .patent-title-cont,
+.patent-item.has-logo .patent-application {
+  grid-column: 2;
+}
+
+.patent-heading,
+.patent-title-cont,
+.patent-application {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.48;
+}
+
+.patent-hanyang-logo {
+  transform: translateY(-3px);
+}
+
+.patent-application {
+  color: var(--muted);
+  margin-top: 2px;
+}
+
 .experience-item {
   color: var(--text);
 }
@@ -573,27 +607,45 @@ h1 {
   display: grid;
   gap: 12px;
   margin: 0;
-  padding-left: 28px;
+  padding-left: 0;
+  list-style: none;
 }
 
 .award-list li,
 .simple-list li {
-  display: flex;
-  justify-content: flex-start;
-  gap: 18px;
   color: var(--text);
   font-size: 1.03rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.award-list strong,
+.simple-list strong {
   font-weight: 700;
 }
 
-.award-list .date,
-.simple-list .date {
-  order: -1;
+.service-block h3 {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 1.03rem;
+  font-weight: 700;
+  line-height: 1.48;
 }
 
-.award-list .date::after,
-.simple-list .date::after {
-  content: ":";
+.service-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 0;
+  color: var(--text);
+  font-size: 1.03rem;
+  list-style: none;
+  line-height: 1.48;
+}
+
+.service-list li::before {
+  content: "◦";
+  margin-right: 8px;
 }
 
 .footer {
