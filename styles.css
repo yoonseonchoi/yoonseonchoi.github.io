@@ -66,7 +66,7 @@ a:focus {
   gap: 8px;
   color: var(--text);
   font-size: 1.02rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0;
   text-decoration: none;
   white-space: nowrap;
@@ -159,10 +159,32 @@ h1 {
 
 .intro {
   max-width: 780px;
-  margin: 22px 0 0;
+  margin: 14px 0 0;
   color: var(--text);
   font-size: 1.05rem;
   line-height: 1.68;
+  hyphens: auto;
+  text-align: justify;
+}
+
+.intro:first-of-type {
+  margin-top: 0;
+}
+
+.intro a {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.intro a:hover,
+.intro a:focus {
+  color: var(--accent-dark);
+}
+
+.text-highlight {
+  background: linear-gradient(transparent 58%, #dfe7f5 58%);
+  padding: 0 2px;
 }
 
 .portrait-wrap {
@@ -189,6 +211,8 @@ h1 {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.2;
+  background: linear-gradient(transparent 52%, #dfe7f5 52%);
+  padding: 0 2px;
 }
 
 .affiliation {
@@ -341,19 +365,19 @@ h1 {
 }
 
 .tags li {
-  border: 1px solid #d8deed;
-  border-radius: 6px;
-  background: #f6f8fc;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   color: var(--accent-dark);
-  padding: 5px 11px;
-  font-size: 0.92rem;
+  padding: 0;
+  font-size: 0.96rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .intro-tags {
-  gap: 8px;
-  margin: 0 0 16px;
+  gap: 14px;
+  margin: 0 0 18px;
 }
 
 .item {
