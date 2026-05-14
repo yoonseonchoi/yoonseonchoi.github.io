@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projects by Yoonseon Choi.">
+    <meta name="author" content="Yoonseon Choi">
+    <meta property="og:title" content="Yoonseon Choi | Projects">
+    <meta property="og:description" content="M.S. and B.S. projects by Yoonseon Choi.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/profile.png">
+    <title>Yoonseon Choi | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Yoonseon Choi">
+          <img src="icons/yschoi.PNG" alt="">
+          <span>Yoonseon</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">About Me</a>
+          <a href="publications.html">Publications</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="activities.html">Activities</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="publication-head">
+        <h1>Projects</h1>
+        <div class="publication-tabs" aria-label="Project categories">
+          <a href="#ms" aria-current="page">M.S.</a>
+          <a href="#bs">B.S.</a>
+        </div>
+      </section>
+
+      <section class="section" id="ms">
+        <h2>M.S.</h2>
+        <div class="content-stack"></div>
+      </section>
+
+      <section class="section" id="bs">
+        <h2>B.S.</h2>
+        <div class="content-stack"></div>
+      </section>
+    </main>
+
+    <script>
+      document.querySelectorAll(".publication-tabs a").forEach((tab) => {
+        tab.addEventListener("click", () => {
+          document.querySelectorAll(".publication-tabs a").forEach((item) => item.removeAttribute("aria-current"));
+          tab.setAttribute("aria-current", "page");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -302,7 +302,7 @@ h1 {
   border-radius: 4px;
   padding: 0 14px;
   color: var(--text);
-  font-size: 0.96rem;
+  font-size: 1.02rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -370,7 +370,7 @@ h1 {
   background: transparent;
   color: var(--accent-dark);
   padding: 0;
-  font-size: 0.96rem;
+  font-size: 1.03rem;
   font-weight: 700;
   line-height: 1.2;
 }
