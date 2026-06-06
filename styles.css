@@ -707,11 +707,31 @@ h1 {
 }
 
 .project-description {
-  min-height: 4.6em;
+  min-height: 5.2em;
   margin: 10px 0 0;
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.56;
+}
+
+.project-output {
+  margin: 8px 0 0;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.48;
+}
+
+.project-output strong {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: #eee8f8;
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .footer {
@@ -720,6 +740,44 @@ h1 {
   padding: 36px 0 52px;
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.to-top {
+  position: fixed;
+  right: 60px;
+  bottom: 56px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--neutral-line);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--accent-dark);
+  box-shadow: 0 10px 24px rgba(35, 38, 48, 0.12);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 180ms ease, transform 180ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.to-top:hover,
+.to-top:focus {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 @media (max-width: 840px) {
@@ -771,6 +829,11 @@ h1 {
 }
 
 @media (max-width: 520px) {
+  .to-top {
+    right: 28px;
+    bottom: 28px;
+  }
+
   main,
   .footer,
   .nav {
