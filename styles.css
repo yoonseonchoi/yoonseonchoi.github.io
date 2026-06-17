@@ -771,7 +771,15 @@ h1 {
   border-color: var(--accent);
   color: var(--accent);
   box-shadow: 0 8px 18px rgba(35, 38, 48, 0.1);
+  text-decoration: none;
   transform: translateY(-1px);
+}
+
+a.project-paper-button,
+a.project-paper-button:hover,
+a.project-paper-button:focus,
+a.project-paper-button:visited {
+  text-decoration: none;
 }
 
 .paper-modal {
