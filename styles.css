@@ -762,6 +762,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.01em;
   line-height: 1;
+  text-decoration: none;
   transition: border-color 160ms ease, color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
 }
 
@@ -876,6 +877,31 @@ h1 {
   border: 1px solid var(--neutral-line);
   border-radius: 8px;
   background: #000;
+}
+
+.demo-link {
+  margin: 0 0 12px;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.demo-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.demo-link img {
+  width: 1.05em;
+  height: 1.05em;
+  object-fit: contain;
+}
+
+.demo-link a:hover,
+.demo-link a:focus {
+  color: var(--accent-dark);
 }
 
 .paper-modal-close {

@@ -37,7 +37,7 @@
         <div class="publication-tabs" aria-label="Project categories">
           <a href="#ms" aria-current="page">M.S.</a>
           <a href="#bs">B.S.</a>
-          <a href="#intern">Intern</a>
+          <a href="#intern">Internship</a>
         </div>
       </section>
 
@@ -75,31 +75,38 @@
           <article class="project-item">
             <img class="project-image" src="images/stock.png" alt="Stock price prediction project overview">
             <div class="project-body">
-              <h3>Stock Price Prediction Using Time-Series Models</h3>
-              <p class="project-description"></p>
-              <p class="project-output"><strong>Output</strong></p>
+              <h3>Stock Price Prediction Using Time-Series Forecasting Models</h3>
+              <p class="project-description">This graduation project used S&amp;P stock price data to build time-series forecasting models, and compare their predictive performance. Through this project, I deepened my understanding of time-series forecasting models, which later served as a foundation for sensor-based time-series prediction research during master's program.</p>
+              <div class="project-actions">
+                <a class="project-paper-button" href="https://github.com/yoonseonchoi/4-2_Graduation_project" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
             </div>
           </article>
           <article class="project-item">
             <img class="project-image" src="images/K99.png" alt="Keyword-based laundry knowledge search engine project overview">
             <div class="project-body">
               <h3>Development of a Laundry Method Search Engine</h3>
-              <p class="project-description"></p>
-              <p class="project-output"><strong>Output</strong></p>
+              <p class="project-description">In this team project, we developed a website that laundry shop owners can search for laundry methods shared within their community. I built a database and designed its schema using data from social network (i.e., BAND) posts, and designed an intuitive UI considering the age group and usability needs of the main users.</p>
+              <div class="project-actions">
+                <a class="project-paper-button" href="https://github.com/dinggiri/NJC" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <button class="project-paper-button" type="button" data-modal-target="k99-demo">Demo</button>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
       <section class="section project-section" id="intern">
-        <h2>Intern</h2>
+        <h2>Internship</h2>
         <div class="content-stack">
           <article class="project-item">
             <img class="project-image" src="images/CJ.png" alt="Parcel delivery demand forecasting project overview">
             <div class="project-body">
-              <h3>Development of a Parcel Delivery Demand Forecasting Model</h3>
-              <p class="project-description"></p>
-              <p class="project-output"><strong>Output</strong></p>
+              <h3>[CJ Logistics] Development of a Parcel Delivery Demand Forecasting Model</h3>
+              <p class="project-description">To more precisely predict parcel delivery demand, I developed time-series forecasting and tabular deep learning models that incorporate external contextual factors, improving performance compared to the existing in-house model. I also implemented an AI agent-based XAI demo to help non-AI experts understand the prediction results.</p>
+              <div class="project-actions">
+                <button class="project-paper-button" type="button" data-modal-target="parcel-patents">Patent</button>
+              </div>
             </div>
           </article>
         </div>
@@ -230,6 +237,36 @@
             <source src="video/ACTIVE_demo_short.m4v" type="video/mp4">
             Your browser does not support the video tag.
           </video>
+        </div>
+      </section>
+    </div>
+
+    <div class="paper-modal" id="k99-demo" aria-hidden="true">
+      <div class="paper-modal-backdrop" data-modal-close></div>
+      <section class="paper-modal-panel demo-modal-panel" role="dialog" aria-modal="true" aria-labelledby="k99-demo-title">
+        <button class="paper-modal-close" type="button" aria-label="Close demo video" data-modal-close>×</button>
+        <h2 id="k99-demo-title">Website (Guidance Video)</h2>
+        <div class="paper-modal-body">
+          <p class="demo-link"><a href="https://www.youtube.com/watch?v=Jl32Ay-ag3M" target="_blank" rel="noopener noreferrer"><img src="images/youtube.svg" alt="">YouTube</a></p>
+          <video class="demo-video" controls muted playsinline preload="metadata">
+            <source src="video/K99_demo_main.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+    </div>
+
+    <div class="paper-modal" id="parcel-patents" aria-hidden="true">
+      <div class="paper-modal-backdrop" data-modal-close></div>
+      <section class="paper-modal-panel" role="dialog" aria-modal="true" aria-labelledby="parcel-patents-title">
+        <button class="paper-modal-close" type="button" aria-label="Close patent list" data-modal-close>×</button>
+        <h2 id="parcel-patents-title">Related Filed Patent</h2>
+        <div class="paper-modal-body">
+          <article class="patent-item has-logo">
+            <img class="experience-logo" src="icons/cj.webp" alt="">
+            <p class="patent-heading"><strong>Method and system for predicting changes in logistics demand</strong> · Sep 2025</p>
+            <p class="patent-application"><em>Application number: 10-2025-0140350</em></p>
+          </article>
         </div>
       </section>
     </div>
