@@ -15,3 +15,42 @@ if (toTopButton) {
     });
   });
 }
+
+const modalButtons = document.querySelectorAll("[data-modal-target]");
+
+modalButtons.forEach((button) => {
+  const modal = document.getElementById(button.dataset.modalTarget);
+
+  if (!modal) {
+    return;
+  }
+
+  const closeModal = () => {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+    modal.querySelectorAll("video").forEach((video) => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  };
+
+  button.addEventListener("click", () => {
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    modal.querySelectorAll("video").forEach((video) => {
+      video.play().catch(() => {});
+    });
+  });
+
+  modal.querySelectorAll("[data-modal-close]").forEach((closeButton) => {
+    closeButton.addEventListener("click", closeModal);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.classList.contains("is-open")) {
+      closeModal();
+    }
+  });
+});
