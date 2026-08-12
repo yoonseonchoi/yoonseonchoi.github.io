@@ -114,14 +114,6 @@
     <button class="to-top" type="button" aria-label="Back to top">
       <span aria-hidden="true">↑</span>
     </button>
-    <script>
-      document.querySelectorAll(".publication-tabs a").forEach((tab) => {
-        tab.addEventListener("click", () => {
-          document.querySelectorAll(".publication-tabs a").forEach((item) => item.removeAttribute("aria-current"));
-          tab.setAttribute("aria-current", "page");
-        });
-      });
-    </script>
     <script src="main.js"></script>
   </body>
 </html>

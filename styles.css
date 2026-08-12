@@ -118,6 +118,7 @@ a:focus {
 main {
   width: min(100% - 32px, var(--max));
   margin: 0 auto;
+  padding-bottom: 220px;
 }
 
 .hero {
@@ -259,7 +260,7 @@ h1 {
 
 .section {
   padding: 24px 0 38px;
-  scroll-margin-top: 76px;
+  scroll-margin-top: 156px;
 }
 
 .section h2 {
@@ -318,7 +319,13 @@ h1 {
 }
 
 .publication-head {
+  position: sticky;
+  top: 65px;
+  z-index: 9;
   padding: 22px 0 16px;
+  border-bottom: 1px solid var(--neutral-line);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
 }
 
 .publication-head h1 {

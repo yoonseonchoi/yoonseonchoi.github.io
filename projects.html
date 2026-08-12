@@ -45,6 +45,20 @@
       <section class="section project-section" id="research">
         <h2>Research</h2>
         <div class="content-stack">
+          <article class="project-item">
+            <img class="project-image" src="images/FACT.png" alt="FACT research project overview">
+            <div class="project-body">
+              <h3>Context-Aware Social Anxiety Prediction Using VR Sensor Data</h3>
+              <p class="project-description"></p>
+            </div>
+          </article>
+          <article class="project-item">
+            <img class="project-image" src="images/MIMO.png" alt="MIMO research project overview">
+            <div class="project-body">
+              <h3>MIMO Channel Prediction Using LLM-Based Time-Series Forecasting</h3>
+              <p class="project-description"></p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -281,14 +295,6 @@
     <button class="to-top" type="button" aria-label="Back to top">
       <span aria-hidden="true">↑</span>
     </button>
-    <script>
-      document.querySelectorAll(".publication-tabs a").forEach((tab) => {
-        tab.addEventListener("click", () => {
-          document.querySelectorAll(".publication-tabs a").forEach((item) => item.removeAttribute("aria-current"));
-          tab.setAttribute("aria-current", "page");
-        });
-      });
-    </script>
     <script src="main.js"></script>
   </body>
 </html>
