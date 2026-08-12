@@ -488,6 +488,11 @@ h1 {
   align-items: start;
 }
 
+.experience-item-ey {
+  grid-template-columns: 28px minmax(0, 1fr);
+  column-gap: 8px;
+}
+
 .experience-logo {
   align-self: center;
   grid-column: 1;
@@ -496,6 +501,17 @@ h1 {
   height: 30px;
   object-fit: contain;
   transform: translateY(-3px);
+}
+
+.experience-logo-ey,
+.experience-logo-cj {
+  transform: translateY(-6px);
+}
+
+.experience-logo-ey {
+  width: 26px;
+  height: 26px;
+  transform: translate(2px, -4px);
 }
 
 .experience-heading {
