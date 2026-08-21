@@ -45,6 +45,12 @@ a:focus {
   color: var(--rust);
 }
 
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  pointer-events: none;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -177,14 +183,21 @@ h1 {
 }
 
 .intro a {
-  color: var(--text);
-  font-weight: 700;
-  text-decoration: none;
+  color: var(--accent-dark);
+  font-weight: inherit;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: color 160ms ease;
 }
 
 .intro a:hover,
 .intro a:focus {
-  color: var(--accent-dark);
+  color: #52658f;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 .text-highlight {
