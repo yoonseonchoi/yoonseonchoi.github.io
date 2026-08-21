@@ -768,6 +768,15 @@ h1 {
   margin-top: 8px;
 }
 
+.project-status {
+  display: inline-block;
+  color: #858a90;
+  font-size: 0.84rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
 .project-paper-button {
   display: inline-flex;
   align-items: center;
