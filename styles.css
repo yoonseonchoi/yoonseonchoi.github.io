@@ -1018,22 +1018,24 @@ a.project-paper-button:visited {
 
 @media (max-width: 840px) {
   .nav {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
-    padding: 14px 0;
+    gap: 16px;
   }
 
   .nav-links {
-    width: 100%;
-    gap: 12px;
+    min-width: 0;
+    width: auto;
+    gap: 14px;
     overflow-x: auto;
-    padding-bottom: 2px;
+    padding-bottom: 0;
   }
 
   .hero {
     grid-template-columns: 1fr;
     padding-top: 44px;
+  }
+
+  .hero > * {
+    min-width: 0;
   }
 
   .portrait-wrap {
@@ -1073,6 +1075,69 @@ a.project-paper-button:visited {
 }
 
 @media (max-width: 520px) {
+  .nav {
+    min-height: 58px;
+    gap: 10px;
+    padding: 6px 0;
+  }
+
+  .brand {
+    flex: 0 0 auto;
+  }
+
+  .brand img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand span {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    gap: 6px;
+    overflow: visible;
+    font-size: 0.82rem;
+  }
+
+  .nav-links a {
+    padding: 8px 0;
+    white-space: nowrap;
+  }
+
+  .publication-head {
+    top: 59px;
+    padding: 14px 0 11px;
+  }
+
+  .publication-head h1 {
+    font-size: 1.45rem;
+  }
+
+  .publication-tabs {
+    flex-wrap: nowrap;
+    gap: 5px 6px;
+    margin-top: 12px;
+    overflow-x: auto;
+    padding-bottom: 1px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .publication-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .publication-tabs a {
+    flex: 0 0 auto;
+    min-height: 30px;
+    padding: 0 9px;
+    font-size: 0.84rem;
+  }
+
   .to-top {
     right: 28px;
     bottom: 28px;
@@ -1082,6 +1147,113 @@ a.project-paper-button:visited {
   .footer,
   .nav {
     width: min(100% - 24px, var(--max));
+  }
+
+  .hero {
+    gap: 28px;
+    padding-top: 32px;
+  }
+
+  .intro-tags {
+    gap: 8px 12px;
+    margin-bottom: 16px;
+  }
+
+  .tags li {
+    font-size: 0.96rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    line-height: 1.62;
+    hyphens: none;
+    text-align: left;
+  }
+
+  .section {
+    padding: 34px 0;
+  }
+
+  .section h2 {
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+  }
+
+  .section-note {
+    font-size: 0.8rem;
+  }
+
+  .content-stack {
+    gap: 12px;
+  }
+
+  .publication {
+    column-gap: 6px;
+    grid-template-columns: 28px minmax(0, 1fr);
+  }
+
+  .publication h3 {
+    font-size: 0.93rem;
+  }
+
+  .authors,
+  .venue,
+  .status,
+  .note,
+  .links {
+    font-size: 0.94rem;
+  }
+
+  .award-list li,
+  .simple-list li,
+  .service-list,
+  .service-block h3,
+  .experience-heading,
+  .patent-heading,
+  .patent-title-cont,
+  .patent-application {
+    font-size: 0.98rem;
+  }
+
+  .experience-role {
+    font-size: 0.96rem;
+  }
+
+  .project-item {
+    gap: 14px;
+  }
+
+  .project-body h3 {
+    font-size: 1.05rem;
+  }
+
+  .project-description {
+    min-height: 0;
+    font-size: 0.96rem;
+  }
+
+  .paper-modal {
+    padding: 10px;
+  }
+
+  .paper-modal-panel {
+    max-height: calc(100dvh - 20px);
+    padding: 22px 14px 20px;
+  }
+
+  .paper-modal-panel h2 {
+    margin-bottom: 18px;
+    padding: 0 42px 10px 0;
+    font-size: 1.35rem;
+  }
+
+  .paper-modal-body {
+    padding-right: 4px;
+  }
+
+  .paper-modal-close {
+    top: 14px;
+    right: 14px;
   }
 
   h1 {

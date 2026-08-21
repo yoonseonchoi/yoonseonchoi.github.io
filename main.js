@@ -30,8 +30,21 @@ if (sectionTabs.length) {
     .filter(Boolean);
 
   const setActiveTab = (activeTab) => {
+    const isAlreadyActive = activeTab.getAttribute("aria-current") === "page";
+
     sectionTabs.forEach((tab) => tab.removeAttribute("aria-current"));
     activeTab.setAttribute("aria-current", "page");
+
+    const tabsContainer = activeTab.closest(".publication-tabs");
+
+    if (!isAlreadyActive && tabsContainer && tabsContainer.scrollWidth > tabsContainer.clientWidth) {
+      const centeredPosition = activeTab.offsetLeft - (tabsContainer.clientWidth - activeTab.offsetWidth) / 2;
+
+      tabsContainer.scrollTo({
+        left: Math.max(0, centeredPosition),
+        behavior: "smooth",
+      });
+    }
   };
 
   let requestedActiveItem = null;
